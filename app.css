@@ -1,0 +1,737 @@
+@import url('https://fonts.cdnfonts.com/css/roboto');
+@import url('https://fonts.cdnfonts.com/css/gorditas');
+
+  .parent {
+    display: grid;
+    grid-template-columns: 30% 40% 30%;
+  }
+  .navbar-link{
+    text-decoration: none;
+    outline: none;
+    color: white;
+  }
+  .navbar-link:hover, :focus, :visited{
+    text-decoration: none;
+    outline: none;
+    color: white;
+  }
+
+  .child-1 {
+    background: #1E1B48;
+    opacity: 1;
+    border: none; /* Just for visualization, you can remove this */
+    padding: 10px; /* Add some padding or content to style the child divs */
+    text-align: center;
+    align-items: center;
+    display: grid;
+    justify-content: center;
+  }
+  .main {
+    background: #214A9C;
+    align-items: center;
+    text-align: center;
+    display: grid;
+  }
+  .child-2 {
+    width:  100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 29% 33% 36%;
+    justify-content: space-around; 
+    text-align: center;
+    border: none; /* Just for visualization, you can remove this */
+    padding: 10px; /* Add some padding or content to style the child divs */
+    align-items: center;
+  }
+  .child-3 {
+    background: #DC0031;
+    opacity: 1;
+    border: none; /* Just for visualization, you can remove this */
+    align-items: center;
+    text-align: center;
+    display: flex;
+  }
+  .child-parent {
+    display: inline-block;
+    margin: auto;
+  }
+  .sub1Child-3 {
+    font-family: 'Roboto', sans-serif;
+    display: block;
+    text-align: left;
+    color: #FFFFFF;
+  }
+  .sub2Child-3 {
+    text-align: left;
+  }
+  form {
+    padding: 0px;
+    margin: 0px;
+  }
+  .sub-style{
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size:  16px;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1; 
+  }
+  .sub-border{
+    border-right: 1px solid #FFFFFF;;
+  }
+  .searchButton{
+    background: #214A9C;
+    border: 1px solid #00000000;
+    border-radius: 4px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size:  20px;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+    padding: 5px;
+    margin-left: 5px;
+  }
+  .searchButton:hover, :focus{
+    text-decoration: none !important;
+    outline: none !important;
+    color: white !important;
+    border: none !important;
+  }
+  .searchDate{
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    color: #807272 !important;
+    background: #FFFFFF;
+    border-radius: 4px;
+    opacity: 1;
+    padding: 0px !important;
+    border: none;
+    outline: none;
+    width: 65% !important;
+    display: inline-block !important;
+  }
+  .banner-div {
+    width: 100%;
+    padding-top: 10px; /* 16:9 aspect ratio for the background image */
+    background: url('assets/background image/Mask Group 11.jpg') center/cover no-repeat; /* Set your background image URL here */
+  }
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(220, 0, 49, 0.26); /* #DC0031 with opacity 0.26 */
+  }
+
+  .top {
+    background: #214A9C; /* Background color for the top child */
+    display: grid;
+    align-items: center;
+  }
+  .content-container{
+    max-width: 820px;
+    margin: auto;
+    padding: 0px 20px;
+  }
+  .middle {
+    width: 100%;
+    margin: auto; /* Position the item 50% from the left of the parent container */
+    margin-top: 20px;
+    background: #214A9C;
+    border-radius: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .top-child-grid {
+    display: grid;
+    grid-template-columns: 450px 400px;
+    justify-content: space-between;
+    color: #FFFFFF;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif ;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .draw-css {
+    display: inline-block;
+  }
+  .draw-div {
+    display: flex; /* Use flexbox to center the text */
+    justify-content: center; /* Horizontally center the content */
+    align-items: center;
+  }
+  .child-grid {
+    display: flex;
+    gap: 25px;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    width: 90%;
+    margin: auto;
+    margin-top: 10px;
+  }
+  .no-margin {
+    margin-top: 0px !important;
+  }
+  .prize {
+    display: flex; /* Use flexbox to center the text */
+    justify-content: center; /* Horizontally center the content */
+    align-items: center;
+    font-size: 22px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 7px;
+    background-color:  #DC0031;
+    min-height: 40px;
+    width: 100%;
+    color: #FFFFFF;
+    font-weight: bold;
+  }
+  .prize-value {
+    display: flex; /* Use flexbox to center the text */
+    justify-content: center; /* Horizontally center the content */
+    align-items: center;
+    font-size: 25px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing:35px;
+    background-color:  #FFFFFF;
+    border-radius: 7px;
+    min-height: 40px;
+    width: 100%;
+    font-weight: bold;
+  }
+  .centered-text {
+    padding: 0px;
+    margin: 0px;
+    text-align: center; /* Horizontally center the text within its container */
+  }
+  .centered-text1 {
+    padding: 0px;
+    margin: 0px;
+    padding-left: 31px;
+    text-align: center; /* Horizontally center the text within its container */
+  }
+  .list-main-div {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    gap: 70px;
+    padding-top: 22px;
+    padding-bottom: 20px;
+  }
+  
+  .list-childdivs {
+    width: 390px;
+    background-color: #214A9C;
+    border-radius: 18px;
+    padding-bottom: 20px;
+    
+  }
+  .heading-1ist {
+    width: 316px;
+    color: #FFFFFF;
+    text-align: center;
+    border-radius: 17px;
+    background-color: #EF0027;
+    font-size: 22px;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    margin: auto;
+    margin-top: 15px;
+    line-height: 44px;
+  }
+  .lotteryNo-div {
+    width: 316px;
+    display: grid;
+    grid-template-columns: 45% 45%;
+    justify-content: space-around;
+    column-gap: 10px;
+    margin: auto;
+    margin-top: 15px
+  }
+  .lotteryNo-child {
+    width: 142px;
+    border-radius: 7px;
+    background-color: #FFFFFF;
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    text-align: center;
+    line-height: 32px;
+    letter-spacing: 2px;
+  }
+  .next-draw {
+    background-color: #FEE61F;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    font-size: 22px;
+    text-align: center;
+    line-height: 48px;
+  }
+  .copyright {
+    background-color: #214A9C ;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    text-align: center;
+    line-height: 50px;
+    color: white;
+  }
+  .img-container {
+    width: 100%; /* Set the container to 100% width of its parent container */
+    height: 100%; /* Set the container's height to the full viewport height */
+    display: flex;
+    justify-content: center; /* Center the image horizontally */
+    align-items: center; /* Center the image vertically */
+    overflow: hidden; 
+  }
+  .footer-img {
+    width: 100%; /* Ensure the image takes the full width of the container */
+    height: 100%; /* Ensure the image takes the full height of the container */
+    object-fit: cover;
+  }
+
+  /* Contact Us Css Start */
+
+  .contact-main-div {
+    background-color: #86CCEA;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .contact-form{
+    max-width: 800px;
+    padding: 0px 20px;
+    margin: auto;
+    
+  }
+  .contact-heading{
+    font-size: 20px;
+    text-align: center;
+    color: #214A9C;
+    padding-bottom: 10px;
+    width: 100%;
+    font-weight: bold;
+  }
+  .contact-label{
+    display: block;
+    font-size: 16px;
+    background-color: transparent;
+    font-family: 'Roboto', sans-serif;
+  }
+  .contact-input{
+    margin-bottom: 15px;
+    display: block;
+    background-color: white;
+    line-height: 30px;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+    border: none;
+  }
+  .inquiry-input{
+    height: 100px;
+  }
+  .contact-submit{
+    margin-bottom: 20px;
+    font-size: 16px;
+    line-height: 20px;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    width: 100%;
+    background-color: #007BFF;
+    text-align: center;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    border: none;
+    font-weight: bold;
+
+  }
+  /* Contact Us Css End*/
+
+  /* About Us Css Start */
+
+  .about-main-div {
+    background-color: #86CCEA;
+  }
+  .about-div{
+    background-color: transparent;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .about-heading{
+    font-size: 20px;
+    text-align: center;
+    padding-bottom: 20px;
+    width: 100%;
+    font-weight: bold;
+    color: #1E1B48;
+  }
+  .about-info
+  {
+    display: block;
+    text-align: center;
+    font-size: 12px;
+    width: 100%;
+    margin: 0px;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 10px;
+  }
+  .vision-div{
+    background-color: #1E1B48;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .vision-heading
+  {
+    padding-bottom: 30px;
+    text-align: center;
+    width: 100%;
+    display: block;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+  }
+  .vision-info
+  {
+    display: block;
+    text-align: center;
+    font-size: 12px;
+    width: 100%;
+    margin: 0px;
+    color: white;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  
+
+  /* About Us Css End */
+
+
+@media only screen and (min-width: 1024px) {
+  .middle {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .child-grid {
+    margin-top: 20px;
+  }
+  .prize {
+    font-size: 22px;
+  }
+  .prize-value {
+    font-size: 27px;
+  }
+
+}
+
+
+@media only screen and (max-width: 1024px) {
+
+  .sub-style{
+    font-size:  14px;
+  }
+
+  .top-child-grid {
+    font-size: 18px;
+  }
+  .middle {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  .child-grid {
+    margin-top: 15px;
+  }
+  .prize {
+    font-size: 16px;
+  }
+  .prize-value {
+    font-size: 30px;
+}
+  .searchDate{
+    width: 60% !important;
+  }
+  .child-parent{
+    width: 90%;
+  }
+  .list-main-div{
+    grid-template-columns: 350px 350px;
+    column-gap: 15px;
+  }
+  .list-childdivs{
+    width: 350px;
+  }
+  .top-child-grid{
+    grid-template-columns: 350px 300px
+  }
+ 
+  }
+
+@media only screen and (max-width: 768px) {
+
+  .parent {
+    display: grid;
+    grid-template-columns: 100%;
+  }
+  .child-1 {
+    padding: 0px !important;
+    padding-top: 5px !important;
+    padding-bottom: 5px !important;
+  }
+  .child-2 {
+    grid-template-columns: 29% 33% 36%;
+  }
+  .sub-border {
+    border-right: 1px solid #FFFFFF !important;
+  }
+  
+  .child-grid
+  {
+    width: 94%;
+  }
+  /* starter / consolation Start 600 - 768px */
+  .list-main-div{
+    grid-template-columns: 280px 280px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .list-childdivs{
+    width: 280px;
+    border-radius: 18px;
+  }
+  .heading-1ist {
+    width: 250px;
+    font-size: 22px;
+    border-radius: 18px;
+    margin-top: 15px;
+    line-height: 60px;
+  }
+  .lotteryNo-div {
+    width: 240px;
+    margin-top: 10px;
+  }
+  .lotteryNo-child {
+    width: 110px;
+    font-size: 20px;
+  }
+  /* starter / consolation End  */
+  .sub-small{
+    padding: 10px;
+  }
+  .child-3
+  {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  .top-child-grid{
+    grid-template-columns: 280px 200px
+  }
+  .sub1Child-3{
+    padding-left: 20%;
+  }
+  .sub2Child-3
+  {
+    padding-left: 20%;
+  }
+  .searchDate{
+    height: 30px !important;
+    width: 60% !important;
+  }
+  .next-draw {
+    font-size: 25px;
+    line-height: 58px;
+}
+  
+}
+
+@media only screen and (max-width:600px) {
+
+    /* starter / consolation Start */
+    .list-main-div{
+      grid-template-columns: 230px 230px;
+      padding-top: 40px;
+      padding-bottom: 40px;
+    }
+    .list-childdivs{
+      width: 230px;
+      border-radius: 10px;
+    }
+    .heading-1ist {
+      width: 210px;
+      font-size: 20px;
+      border-radius: 10px;
+      margin-top: 10px;
+      line-height: 50px;
+    }
+    .lotteryNo-div {
+      width: 200px;
+      margin-top: 10px;
+    }
+    .lotteryNo-child {
+      width: 90px;
+      font-size: 18px;
+    }
+    /* starter / consolation End  */
+}
+
+
+
+@media only screen and (max-width:500px) {
+  
+  .top-child-grid {
+    grid-template-columns: 186px 134px;
+    font-size: 12px;
+  }
+  .child-parent {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .sub1Child-3 {
+    padding-left: 10% !important;
+  }
+  .sub2Child-3 {
+    padding-left: 10% !important;
+  }
+  .searchDate{
+    height: 30px !important;
+    width: 70% !important;
+  }
+  .searchButton{
+    padding: 4px 10px !important;
+  }
+  .child-2 {
+    grid-template-columns: 29% 33% 36%;
+  }
+  .sub-small {
+    padding: 0px !important;
+  } 
+  .sub-border {
+    border-right: 1px solid #FFFFFF !important;
+  }
+  .sub-style {
+    font-size: 13px;
+  }
+    /* Draw Date Start */
+    .child-3 {
+      padding-top: 0px;
+      padding-bottom: 0px;
+    }
+  /* Draw Date End */
+
+  .child-1 img {
+    height: 70px;
+  }
+  .banner-div {
+    padding-top: 10px;
+  }
+  .middle {
+    margin-top: 10px;
+  }
+
+  .list-main-div {
+    grid-template-columns: 190px 190px;
+    column-gap: 5px;
+  }
+  .list-childdivs {
+    width: 190px;
+    border-radius: 10px;
+    margin-bottom: 0px;
+    padding-bottom: 10px;
+  }
+  .heading-1ist {
+    width: 170px;
+    font-size: 16px;
+    margin-top: 10px;
+    border-radius: 10px;
+    line-height: 40px;
+  }
+  .lotteryNo-div {
+    width: 170px;
+    column-gap: 0px;
+    margin-top: 10px;
+  }
+  .lotteryNo-child {
+    width: 80px;
+    line-height: 30px;
+    font-size: 15px;
+    font-weight: 700;
+  }
+
+  .prize {
+    font-size: 12px;
+    border-radius: 7px;
+    min-height: 30px;
+  }
+  .prize-value {
+    font-size: 18px;
+    letter-spacing:9px;
+    min-height: 30px;
+  }
+  .centered-text1 {
+    padding-left: 12px;
+  }
+  .next-draw {
+    font-size: 16px;
+    line-height: 42px;
+}
+.list-main-div {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+}
+
+
+@media only screen and (max-width: 425px) {
+  
+  /* Draw Date Start */
+    .child-3 {
+      padding-top: 0px;
+      padding-bottom: 0px;
+    }
+  /* Draw Date End */
+    .child-1 img {
+      height: 70px;
+    }
+  .banner-div {
+    padding-top: 10px;
+  }
+  .middle {
+    margin-top: 10px;
+  }
+   /* starter / consolation Start */
+  .list-main-div {
+    grid-template-columns: 152px 152px;
+    column-gap: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .list-childdivs {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 0px;
+    padding: 0px 10px 10px;
+  }
+  .heading-1ist {
+    width: 140px;
+    font-size: 12px;
+    margin-top: 10px;
+    border-radius: 7px;
+    line-height: 33px;
+  }
+  .lotteryNo-div {
+    width: 100%;
+    column-gap: 5px;
+    margin-top: 10px;
+  }
+  .lotteryNo-child {
+    width: 100%;
+    line-height: 22px;
+    font-size: 13px;
+    font-weight: 700;
+  }
+
+  /* starter / consolation End */
+}
