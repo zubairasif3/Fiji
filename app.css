@@ -1,6 +1,7 @@
 @import url('https://fonts.cdnfonts.com/css/roboto');
 @import url('https://fonts.cdnfonts.com/css/gorditas');
 
+
   .parent {
     display: grid;
     grid-template-columns: 30% 40% 30%;
@@ -60,6 +61,7 @@
     display: block;
     text-align: left;
     color: #FFFFFF;
+    text-align: center;
   }
   .sub2Child-3 {
     text-align: left;
@@ -298,12 +300,11 @@
 
   .contact-main-div {
     background-color: #86CCEA;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 25px;
+    padding-bottom: 25px;
   }
   .contact-form{
-    max-width: 800px;
-    padding: 0px 20px;
+    width: 80%;
     margin: auto;
     
   }
@@ -311,7 +312,7 @@
     font-size: 20px;
     text-align: center;
     color: #214A9C;
-    padding-bottom: 10px;
+    padding-bottom: 15px;
     width: 100%;
     font-weight: bold;
   }
@@ -322,7 +323,7 @@
     font-family: 'Roboto', sans-serif;
   }
   .contact-input{
-    margin-bottom: 15px;
+    margin-bottom: 20px;
     display: block;
     background-color: white;
     line-height: 30px;
@@ -332,10 +333,10 @@
     border: none;
   }
   .inquiry-input{
-    height: 100px;
+    height: 200px;
   }
   .contact-submit{
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
     font-size: 16px;
     line-height: 20px;
     font-family: 'Roboto', sans-serif;
@@ -381,7 +382,7 @@
     padding-bottom: 10px;
   }
   .vision-div{
-    background-color: #1E1B48;
+    /* background-color: #1E1B48; */
     padding-top: 40px;
     padding-bottom: 40px;
   }
@@ -391,7 +392,7 @@
     text-align: center;
     width: 100%;
     display: block;
-    color: white;
+    /* color: white; */
     font-weight: bold;
     font-size: 20px;
   }
@@ -402,7 +403,7 @@
     font-size: 12px;
     width: 100%;
     margin: 0px;
-    color: white;
+    /* color: white; */
     padding-left: 10%;
     padding-right: 10%;
   }
@@ -410,6 +411,21 @@
 
   /* About Us Css End */
 
+  body{
+    min-height: 100vh;
+    padding-top: 111px;
+  }
+  body .parent{
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    left: 0px;
+    z-index: 10000;
+  }
+  .contact-main-div,
+  .about-main-div{
+    min-height: calc(100vh - 161px);
+  }
 
 @media only screen and (min-width: 1024px) {
   .middle {
@@ -543,7 +559,16 @@
   .next-draw {
     font-size: 25px;
     line-height: 58px;
-}
+  }
+
+  body{
+    padding-top: 245px;
+  }
+
+  .contact-main-div,
+  .about-main-div{
+    min-height: calc(100vh - 297px);
+  }
   
 }
 
@@ -575,12 +600,29 @@
       font-size: 18px;
     }
     /* starter / consolation End  */
+
 }
 
 
 
 @media only screen and (max-width:500px) {
   
+  body{
+    padding-top: 189px;
+  }
+
+  .contact-main-div,
+  .about-main-div{
+    min-height: calc(100vh - 241px);
+  }
+
+  .img-container{
+    height: 135px;
+  }
+  .img-container .footer-img{
+    object-fit: unset;
+  }
+
   .top-child-grid {
     grid-template-columns: 186px 134px;
     font-size: 12px;
@@ -734,4 +776,21 @@
   }
 
   /* starter / consolation End */
+}
+
+
+@media only screen and (max-height: 860px) {
+  .contact-heading {
+    padding-bottom: 8px;
+  }
+  .contact-main-div{
+    padding: 20px;
+  }
+  .inquiry-input{
+    height: 150px;
+  }
+  .about-div{
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
 }
