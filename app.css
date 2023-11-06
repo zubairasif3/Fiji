@@ -356,6 +356,10 @@
 
   .about-main-div {
     background-color: #86CCEA;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
   }
   .about-div{
     background-color: transparent;
