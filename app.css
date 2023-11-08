@@ -630,7 +630,8 @@
 
   .contact-main-div,
   .about-main-div{
-    min-height: calc(95vh - 241px);
+    height: calc(55vh - 241px);
+    overflow: hidden;
   }
 
   .vision-heading,
