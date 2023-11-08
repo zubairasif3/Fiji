@@ -631,6 +631,7 @@
   .contact-main-div,
   .about-main-div{
     min-height: calc(100vh - 241px);
+    justify-content: flex-start;
   }
 
   .contact-form{
