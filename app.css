@@ -630,7 +630,18 @@
 
   .contact-main-div,
   .about-main-div{
-    min-height: calc(100vh - 241px);
+    min-height: calc(80vh - 241px);
+  }
+
+  .vision-heading,
+  .about-heading {
+    font-size: 16px;
+  }
+  .vision-info,
+  .about-info{
+    font-size: 11px;
+    padding-bottom: 5px;
+
   }
 
   .contact-form{
