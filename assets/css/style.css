@@ -138,6 +138,7 @@ a{
   text-align: center;
 }
 
+#PrizeModal .modal-dialog,
 #RestrictedRegionModal .modal-dialog{
   display: flex;
   justify-content: center;
@@ -146,6 +147,7 @@ a{
   margin: auto;
 }
 
+#PrizeModal .modal-content,
 #RestrictedRegionModal .modal-content{
   background-color: rgb(25, 74, 165);
   border: 5px solid rgb(239, 49, 33);
@@ -154,20 +156,20 @@ a{
   min-width: 670px;
   margin: 10px;
 }
-#RestrictedRegionModal .modal-content .vector{
+.modal-content .vector{
   position: absolute;
   top: 0px;
   right: 0px;
   z-index: 1000;
 }
-#RestrictedRegionModal .modal-content .vector .btn-mclose{
+.modal-content .vector .btn-mclose{
   background-color: #000000;
   color: #ffffff;
   font-size: 12px;
   padding: 6px 12px;
   border-radius: 0px;
 }
-#RestrictedRegionModal .modal-content .vector .btn-mclose:hover{
+.modal-content .vector .btn-mclose:hover{
   background-color: #ffffff;
   color: #000000;
 }
@@ -228,6 +230,13 @@ a{
   margin-bottom: 20px;
 }
 
+table.dataTable>thead>tr>th,
+table.dataTable>thead>tr>td{
+  padding: 0px !important;
+}
+table.dataTable>tbody>tr:nth-child(odd){
+  background-color: #E5F2F5;
+}
 .dataTables_length{
   display: none !important;
 }
@@ -235,12 +244,22 @@ a{
   padding: 0.1em 0.5em;
 }
 
+.cursor-pointer{
+  cursor: pointer;
+}
 
 /* prize section home page */
 
 .prize-section{
   background: #67ceeb;
   padding: 10px;
+}
+.prize-section .title{
+  color: #000000;
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: center;
 }
 
 
@@ -360,6 +379,21 @@ a{
 }
 
 
+/* Prize Modal */
+  #PrizeModal .modal-content {
+    background: #67ceeb;
+  }
+  #PrizeModal .list-childdivs {
+    max-width: 48%;
+    padding: 0px 10px 10px;
+  }
+  #PrizeModal .lotteryNo-div,
+  #PrizeModal .lotteryNo-child,
+  #PrizeModal .heading-1ist {
+    max-width: 100%;
+  }
+
+
 
 
 @media only screen and (min-width: 1024px) {
@@ -430,6 +464,11 @@ a{
     width: 110px;
     font-size: 20px;
   }
+  #PrizeModal .modal-content,
+  #RestrictedRegionModal .modal-content{
+    min-width: unset;
+    max-width: 100%;
+  }
 }
 @media only screen and (max-width:600px) {
   .list-main-div{
@@ -462,7 +501,6 @@ a{
   .content-container{
     padding: 0px;
   }
-
   .middle {
     margin-top: 10px;
   }
