@@ -35,8 +35,28 @@
             </div>
         </div>
         <div class="main-content">
+            <div class="next_draw-section">
+                <div class="title">Next Drawing</div>
+                <div class="d-flex justify-content-center">
+                    <div>
+                        <div class="remainingTime" id="remaining_hours">00</div>
+                        <div class="remainingTimeLabel">hrs</div>
+                    </div>
+                    <div class="remainingTime">:</div>
+                    <div>
+                        <div class="remainingTime" id="remaining_minutes">00</div>
+                        <div class="remainingTimeLabel">mins</div>
+                    </div>
+                    <div class="remainingTime">:</div>
+                    <div>
+                        <div class="remainingTime" id="remaining_seconds">00</div>
+                        <div class="remainingTimeLabel">secs</div>
+                    </div>
+                </div>
+            </div>
             <div class="prize-section">
                 <div class="title">Draw Result</div>
+                <div id="today_date">Monday, December 04th 2023</div>
                 <div class="content-container">
                     <div class="middle">
                         <div class="child-grid no-margin">
@@ -255,5 +275,39 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/script.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <script>
+        $(document).ready(function() {
+
+            // current Date add in section
+            var currentDate = new Date();
+            var formattedDate = $.datepicker.formatDate("DD, MM ddth yy", currentDate);
+            $("#today_date").text(formattedDate);
+
+
+            // countdown next Draw  add in section
+            var targetDateString = "Dec 06 2023 23:59:59";
+            var targetDate = new Date(targetDateString);
+            var countdownInterval = setInterval(function() {
+                var currentDate = new Date();
+                var remainingTime = targetDate - currentDate;
+                if (remainingTime <= 0) {
+                    $('#countdown').text('Countdown complete!');
+                    clearInterval(countdownInterval);
+                } else {
+                    var hours = Math.floor(remainingTime / (1000 * 60 * 60));
+                    var minutes = Math.floor((remainingTime % (1000 * 60 * 60)) / (1000 * 60));
+                    var seconds = Math.floor((remainingTime % (1000 * 60)) / 1000);
+
+                    $('#remaining_hours').text(padZero(hours));
+                    $('#remaining_minutes').text(padZero(minutes));
+                    $('#remaining_seconds').text(padZero(seconds));
+                }
+            }, 1000);
+            function padZero(number) {
+                return (number < 10 ? '0' : '') + number;
+            }
+        });
+    </script>
 </body>
 </html>

@@ -18,6 +18,10 @@ a{
   color: #000000;
 }
 
+.wrapper .header .logo img {
+  width: 235px;
+  height: 91px;
+}
 .wrapper .header .top-left{
   background-color: #1E1B48;
   padding: 10px;
@@ -234,6 +238,9 @@ table.dataTable>thead>tr>th,
 table.dataTable>thead>tr>td{
   padding: 0px !important;
 }
+table.dataTable>thead>tr>th {
+  border-bottom-color: rgba(0, 0, 0, 0.3) !important;
+}
 table.dataTable>tbody>tr:nth-child(odd){
   background-color: #E5F2F5;
 }
@@ -258,10 +265,17 @@ table.dataTable>tbody>tr:nth-child(odd){
   color: #000000;
   font-size: 30px;
   font-weight: bold;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   text-align: center;
 }
 
+.prize-section #today_date{
+  color: #000000;
+  font-size: 20px;
+  font-weight: bold;
+  padding-bottom: 10px;
+  text-align: center;
+}
 
 .content-container{
   max-width: 780px;
@@ -380,19 +394,42 @@ table.dataTable>tbody>tr:nth-child(odd){
 
 
 /* Prize Modal */
-  #PrizeModal .modal-content {
-    background: #67ceeb;
-  }
-  #PrizeModal .list-childdivs {
-    max-width: 48%;
-    padding: 0px 10px 10px;
-  }
-  #PrizeModal .lotteryNo-div,
-  #PrizeModal .lotteryNo-child,
-  #PrizeModal .heading-1ist {
-    max-width: 100%;
-  }
+#PrizeModal .modal-content {
+  background: #67ceeb;
+}
+#PrizeModal .list-childdivs {
+  max-width: 48%;
+  padding: 0px 10px 10px;
+}
+#PrizeModal .lotteryNo-div,
+#PrizeModal .lotteryNo-child,
+#PrizeModal .heading-1ist {
+  max-width: 100%;
+}
 
+/* next_draw section style */
+
+.next_draw-section{
+  background: #f00;
+  padding: 10px;
+  color: #ffffff;
+}
+.next_draw-section .title{
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 5px;
+}
+.next_draw-section .remainingTime{
+  font-size: 40px;
+  line-height: 1.2;
+  text-align: center;
+}
+.next_draw-section .remainingTimeLabel{
+  font-size: 18px;  
+  text-transform: uppercase;
+  line-height: 1.2;
+  text-align: center;
+}
 
 
 
@@ -440,6 +477,9 @@ table.dataTable>tbody>tr:nth-child(odd){
 
 @media only screen and (max-width: 768px) {
 
+  .wrapper .header .logo img {
+    height: auto;
+  }
   .list-main-div{
     grid-template-columns: 280px 280px;
     padding-top: 40px;
