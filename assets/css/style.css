@@ -595,7 +595,7 @@ table.dataTable>tbody>tr:nth-child(odd){
 @media only screen and (max-width: 425px) {
   .list-main-div {
     grid-template-columns: 152px 152px;
-    column-gap: 15px;
+    column-gap: 5px;
     padding-top: 10px;
     padding-bottom: 10px;
   }
@@ -631,7 +631,7 @@ table.dataTable>tbody>tr:nth-child(odd){
   }
   .list-childdivs{
     padding: 0px 5px 10px;
-    max-width: 47%;
+    max-width: 50%;
   }
   .heading-1ist{
     max-width: 100%;
