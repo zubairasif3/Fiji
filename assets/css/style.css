@@ -631,5 +631,9 @@ table.dataTable>tbody>tr:nth-child(odd){
   }
   .list-childdivs{
     padding: 0px 5px 10px;
+    max-width: 47%;
+  }
+  .heading-1ist{
+    max-width: 100%;
   }
 }
