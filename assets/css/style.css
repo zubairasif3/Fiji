@@ -624,3 +624,12 @@ table.dataTable>tbody>tr:nth-child(odd){
     font-weight: 700;
   }
 }
+
+@media only screen and (max-width: 380px){
+  .lotteryNo-div{
+    column-gap: 0px;
+  }
+  .list-childdivs{
+    padding: 0px 5px 10px;
+  }
+}
